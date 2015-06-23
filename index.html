@@ -66,7 +66,58 @@ width: 800px;
 	margin: 0px auto;
 
 }
+.circ {
+  height: 800px;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-image:url(pizza.jpg);
+}
+.sect {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 150px solid transparent;
+  border-top: 150px solid transparent;
+  transform-origin: bottom left;
+}
+.sect:nth-child(2) {
+  transform: rotate(45deg);
+  border-right: 150px solid transparent;
+}
+.sect:nth-child(3) {
+  transform: rotate(90deg);
+  border-right: 150px solid transparent;
+}
+.sect:nth-child(4) {
+  transform: rotate(135deg);
+  border-right: 150px solid transparent;
+}
+.sect:nth-child(5) {
+  transform: rotate(180deg);
+  border-right: 150px solid transparent;
+}
+.sect:nth-child(6) {
+  transform: rotate(225deg);
+  border-right: 150px solid transparent;
+}
+.sect:nth-child(7) {
+  transform: rotate(270deg);
+  border-right: 150px solid transparent;
+}
+.sect:nth-child(8) {
+  transform: rotate(315deg);
+  border-right: 150px solid transparent;
+}
 
+.sect:nth-child(8):hover {
+  transform: rotate(315deg);
+  border-right: 150px solid red;
+}
 </style>
 </head>
 <body>
@@ -74,7 +125,18 @@ width: 800px;
 <div id="pizza">
 
 
+<div class="circ">
 
+  <div class="sect"></div>
+  <div class="sect"></div>
+  <div class="sect"></div>
+  <div class="sect"></div>
+  <div class="sect"></div>
+  <div class="sect"></div>
+  <div class="sect"></div>
+  <div class="sect"></div>
+
+</div>
 
 
 
